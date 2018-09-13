@@ -1,0 +1,22 @@
+<div class="container custom-container" *ngIf="room">
+  <div class="row">
+    <div class="col-md-2">
+      <img src="assets/images/rooms/{{room.avatar | lowercase}}.jpg" class="details-image" />
+    </div>
+    <div class="col-md-10">
+      <h3>    
+          {{ room.name | capitalize }}, {{ room.city }}          
+      </h3>
+      <h5>
+        {{ room.address }}
+      </h5>
+      <h6>${{ room.price }}</h6>
+      <h6>{{ room.bed_type }}</h6>
+      <h6>{{room.area}}m<sup>2</sup></h6>
+    </div>
+  </div>    
+  <br /><br />
+</div>   
+<div *ngIf="!room" class="container">
+   No room found
+</div>

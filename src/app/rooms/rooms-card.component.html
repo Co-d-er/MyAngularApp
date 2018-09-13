@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row card-container">
+        <div class="col-sm-6 col-md-4" *ngFor="let room of rooms;trackBy:trackbyService.room">
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-margin-bottom">
+                    <img src="assets/images/rooms/{{room.avatar | lowercase}}.jpg" alt="Norway" style="width:100%">
+                    <div class="w3-container w3-white room-opacity">
+                        <h3>{{room.name}}, {{room.city}}</h3>
+                        <h4>{{room.address}}</h4>
+                        <h6 class="w3-opacity">${{room.price}}</h6>
+                        <p>{{room.bed_type}}</p>
+                        <p>{{room.area}}m<sup>2</sup></p>
+                        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+                        <a [routerLink]="['/rooms',room.id,'details']" class="w3-button w3-block w3-black w3-margin-bottom">
+                            Choose Room
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <div *ngIf="!rooms.length">
+            No Records Found
+        </div>
+    </div>
+</div>

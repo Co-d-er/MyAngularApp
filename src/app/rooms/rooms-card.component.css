@@ -1,0 +1,158 @@
+.card-container {
+    width:85%;
+}
+
+.card {
+    background-color:#fff;
+    border: 1px solid #d4d4d4;
+    height:120px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card-header {
+    background-color:#027FF4;
+    font-size:14pt;
+    color:white;
+    padding:5px;
+    width:100%;
+}
+
+.card-close {
+    color: white;
+    font-weight:bold;
+    margin-right:5px;
+}
+
+.card-body {
+    padding-left: 5px;
+}
+
+.card-body-left {
+    margin-top: -5px;
+}
+
+.card-body-right {
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.card-body-content {
+    width: 100px;
+}
+
+.card-image {
+    height:50px;width:50px;margin-top:10px;
+}
+
+.white {
+    color: white;
+}
+
+.white:hover {
+    color: white;
+}
+
+.room-opacity {
+    opacity: 0.7;
+}
+
+
+
+
+.rooms
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 100px;
+	padding-bottom: 124px;
+}
+.room_row
+{
+	margin-top: 82px;
+}
+.room
+{
+	box-shadow: 0px 23px 35px rgba(4,4,4,0.18);
+}
+.room_image
+{
+	width: 100%;
+}
+.room_image img
+{
+	max-width: 100%;
+}
+.room_content
+{
+	padding-top: 58px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 62px;
+}
+.room_type
+{
+	font-size: 12px;
+	font-weight: 600;
+	color: #7e7e7e;
+	text-transform: uppercase;
+	line-height: 0.75;
+}
+.room_title
+{
+	margin-top: 13px;
+}
+.room_title a
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #333333;
+	line-height: 1.25;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.room_title a:hover
+{
+	color: #d6baa0;
+}
+.room_text
+{
+	margin-top: 27px;
+}
+.room_price
+{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: -27px;
+	width: 185px;
+	height: 47px;
+	background: #FFFFFF;
+	line-height: 47px;
+	font-size: 14px;
+	color: #5a2360;
+	font-weight: 500;
+}
+.room_price span
+{
+	color: #8d8d8d;
+}
+.room_button
+{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: -32px;
+}

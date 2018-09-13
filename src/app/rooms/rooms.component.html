@@ -1,0 +1,49 @@
+<div class="rooms view indent">
+    <div class="container">
+        <header>
+            <h3 class="text-color">
+                <span class="glyphicon glyphicon-user"></span>
+                {{ title }}
+            </h3>
+        </header>
+        <br />
+        <div class="row">
+            <div class="col-md-10">
+                <div class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="toolbar-item">
+                            <a (click)="changeDisplayMode(displayModeEnum.Card)" [class.active]="displayMode === displayModeEnum.Card">
+                                <span class="glyphicon glyphicon-th-large"></span> Card View
+                            </a>
+                        </li>
+                        <li class="toolbar-item">
+                            <a (click)="changeDisplayMode(displayModeEnum.Grid)" [class.active]="displayMode === displayModeEnum.Grid">
+                                <span class="glyphicon glyphicon-align-justify"></span> List View
+                            </a>
+                        </li>
+                        <li class="toolbar-item">
+                            <a routerLink="/rooms/0/edit">
+                                <span class="glyphicon glyphicon-plus"></span> New Room
+                            </a>
+                        </li>
+                    </ul>
+                    <app-filter-textbox class="navbar-right"
+                     (changed)="filterChanged($event)"></app-filter-textbox>
+                </div>
+            </div>
+        </div>
+        
+        <app-rooms-card 
+          [rooms]="filteredrooms" 
+          [hidden]="displayMode !== displayModeEnum.Card"></app-rooms-card>
+    
+        <app-rooms-grid 
+          [rooms]="filteredrooms" 
+          [hidden]="displayMode !== displayModeEnum.Grid"></app-rooms-grid>
+
+        <app-pagination
+            [totalItems]="totalRecords" 
+            [pageSize]="pageSize" 
+            (pageChanged)="pageChanged($event)"></app-pagination>         
+    </div>
+</div>

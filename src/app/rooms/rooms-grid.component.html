@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row grid-container">
+        <div class="col-md-10">
+            <div class="table">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th appSortBy="name" (sorted)="sort($event)">Name</th>
+                            <th appSortBy="address" (sorted)="sort($event)">Address</th>
+                            <th appSortBy="city" (sorted)="sort($event)">City</th>
+                            <th appSortBy="state.name" (sorted)="sort($event)">State</th>
+                            <th (click)="sort('price')">Price</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let room of rooms;trackBy:trackbyService.room">
+                            <td><img src="assets/images/rooms/{{ room.avatar | lowercase }}.jpg"
+                                    class="grid-image" alt="room Image" /></td>
+                            <td><a [routerLink]="['/rooms',room.id,'details']">{{ room.name | capitalize }}</a></td>
+                            <td>{{ room.address }}</td>
+                            <td>{{ room.city | trim }}</td>
+                            <td>{{ room.state.name }}</td>
+                            <td>{{ room.price | currency:'USD':'symbol' }}</td>
+                        </tr>
+                        <tr *ngIf="!rooms.length">
+                            <td>&nbsp;</td>
+                            <td colspan="7">No Records Found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

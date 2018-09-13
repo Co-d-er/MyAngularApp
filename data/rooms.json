@@ -1,0 +1,58 @@
+[
+      {
+            "id": 1,
+            "name": "George",
+            "avatar": "room_deluxe",
+            "address": "1234 Anywhere St.",
+            "city": "Phoenix ",
+            "state": {
+                "abbreviation": "AZ",
+                "name": "Arizona"
+            },
+            "price": 30,
+            "area": 27,
+            "bed_type": "Single bed"
+      },
+	  {
+            "id": 2,
+            "name": "Hilton",
+            "avatar": "room_double",
+            "address": "901-999 Carriage Hill Rd",
+            "city": "Richmond",
+            "state": {
+                "abbreviation": "VA",
+                "name": "Virginia"
+            },
+            "price": 35,
+            "area": 25,
+            "bed_type": "Double bed"
+      },
+	  {
+            "id": 3,
+            "name": "Lviv",
+            "avatar": "room_single",
+            "address": "3699-3601 Church Ave",
+            "city": "New York City",
+            "state": {
+                "abbreviation": "NY",
+                "name": "New York"
+            },
+            "price": 40,
+            "area": 30,
+            "bed_type": "Single bed"
+      },
+      {
+        "id": 4,
+        "name": "Paradise",
+        "avatar": "double_room1",
+        "address": "2001-2019 W Slauson Ave",
+        "city": "Los Angeles",
+        "state": {
+            "abbreviation": "LA",
+            "name": "California"
+        },
+        "price": 50,
+        "area": 32,
+        "bed_type": "Double bed"
+      }
+]

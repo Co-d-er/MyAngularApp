@@ -1,0 +1,14 @@
+.room-form input[type='text'], 
+.room-form input[type='number'],
+.room-form input[type='email'],
+.room-form select {
+    width:100%;
+}
+
+.room-form .ng-invalid {
+  border-left: 5px solid #a94442;
+}
+
+.room-form .ng-valid {
+  border-left: 5px solid #42A948;
+}
